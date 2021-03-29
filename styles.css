@@ -1,3 +1,9 @@
+@font-face {
+  font-family: data;
+  src: url(./data-control/data-latin.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   background-size: cover;
   margin: 0;
@@ -54,32 +60,28 @@ body {
   background-color: black;
   animation: fade linear 1 normal forwards;
   animation-delay: 8s;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   overflow: hidden;
 }
-.loading img{
+.loading p{
   position: absolute;
   display: flex;
-  opacity: 0%;
+  color: white;
+  font-size: 50px;
+  font-family: data;
   align-self: center;
   justify-self: center;
   margin-bottom: 200px;
-  animation: loading forwards;
+  animation: loading infinite;
   animation-delay: 2s;
-  animation-duration: 6s;
+  animation-duration: 1s;
 }
 @keyframes loading{
   0%{
     opacity: 0%;
   }
-  20%{
-    opacity: 100%;
-  }
-  80%{
-    opacity: 100%;
-  }
   100%{
-    opacity: 0%
+    opacity: 100%;
   }
 }
 @keyframes fade{
